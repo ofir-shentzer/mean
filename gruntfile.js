@@ -60,17 +60,6 @@ module.exports = function(grunt) {
                 reporter: 'spec'
             },
             src: ['test/**/*.js']
-        },
-        bower: {
-            install: {
-                options: {
-                    targetDir: './public/lib',
-                    layout: 'byComponent',
-                    install: true,
-                    verbose: true,
-                    cleanBowerDir: true
-                }
-            }
         }
     });
 
@@ -80,7 +69,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-bower-task');
 
     //Making grunt default to force in order not to break the project.
     grunt.option('force', true);
@@ -90,7 +78,4 @@ module.exports = function(grunt) {
 
     //Test task.
     grunt.registerTask('test', ['mochaTest']);
-
-    //Bower task.
-    grunt.registerTask('install', ['bower']);
 };
