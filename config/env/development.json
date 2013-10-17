@@ -1,11 +1,11 @@
 {
     "db": "mongodb://localhost/mean-dev",
     "app": {
-        "name": "MEAN - A Modern Stack - Development"
+        "name": "Quiqy - finding cheap movers"
     },
     "facebook": {
-        "clientID": "APP_ID",
-        "clientSecret": "APP_SECRET",
+        "clientID": "410605399040965",
+        "clientSecret": "6a704a81f5414ba53b26f2a8f495b348",
         "callbackURL": "http://localhost:3000/auth/facebook/callback"
     },
     "twitter": {
